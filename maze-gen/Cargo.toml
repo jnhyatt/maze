@@ -1,0 +1,11 @@
+[package]
+name = "maze-gen"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+bevy_math = "0.18"
+rand = "0.9"
