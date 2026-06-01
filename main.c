@@ -8,13 +8,9 @@
 #include <string.h>
 #include <threads.h>
 
-#include <xmmintrin.h>
-
 const float PI = 3.14159265358979323846f;
 
-typedef struct {
-    __m128 inner;
-} Quat;
+typedef float Quat[4];
 
 typedef struct {
     float x;

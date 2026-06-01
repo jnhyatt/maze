@@ -8,7 +8,7 @@ build-maze-gen:
 
 build-maze: build-maze-gen
     mkdir -p target
-    gcc -std=c23 -o target/maze main.c -L/home/josh/maze/maze-gen/target/debug -lmaze_gen -lGL -lglut -lm
+    gcc -std=c23 -o target/maze main.c -Lmaze-gen/target/debug -lmaze_gen -lGL -lglut -lm
 
 clean:
     cd maze-gen && cargo clean
